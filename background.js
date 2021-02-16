@@ -1,0 +1,13 @@
+chrome.runtime.onInstalled.addListener(()=>{
+  chrome.storage.sync.set(
+    {
+      color:"green"
+    },
+    ()=>{
+      console.log("installed")
+    }
+  )
+});
+chrome.tabs.onCreated.addListener(()=>{
+  console.log(chrome.storage.sync.get(['color']))
+})

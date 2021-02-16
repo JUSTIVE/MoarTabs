@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link src="./main.css" type="text/css" /> -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+      body {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #mainContents {
+        width: 1000px;
+        height: 80vh;
+        margin: 10vh auto;
+      }
+      h1 {
+        font-family: 'Lexend Deca', sans-serif;
+        user-select: none;
+        font-size: 128px;
+      }
+      #addButton {
+        background: none;
+        border: none;
+        color: #2477ff;
+        border-radius: 4px;
+        padding: 4px 8px;
+        transition: 0.2s cubic-bezier(0.25, 1, 0.8, 1);
+      }
+      #addButton:hover {
+        cursor: pointer;
+        background: #ffffff22;
+      }
+      #tablist {
+        display: grid;
+      }
+      @media (prefers-color-scheme: light) {
+        body {
+          background: #f2f2f2;
+        }
+        h1 {
+          color: #e8e8e8;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #222222;
+        }
+        h1 {
+          color: #f2f2f2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainContents">
+      <h1>Welcome</h1>
+      <div id="buttonArea">
+        <button id="addButton">add tab</button>
+      </div>
+      <div id="tablist"></div>
+    </div>
+    <script></script>
+  </body>
+</html>
